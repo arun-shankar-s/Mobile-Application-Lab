@@ -1,0 +1,16 @@
+Toast.makeText(MainActivity.this,"Successful!!",Toast.LENGTH_SHORT).show();
+
+Toast: Displays brief messages to the user.
+
+Toast.makeText() creates a toast with three parameters:
+Context: Where to display it (e.g., MainActivity.this).
+Text: Message to show (e.g., "Successful!!").
+Duration: How long it lasts:
+Toast.LENGTH_SHORT: ~2 seconds.
+Toast.LENGTH_LONG: ~3.5 seconds.
+Call show() to display the toast.
+
+
+onCreate(): This method is called when the activity is first created.
+EdgeToEdge: Ensures the UI is displayed edge-to-edge on the screen.
+setContentView(R.layout.activity_main): Specifies the layout file activity_main.xml to define the activity's UI elements.
