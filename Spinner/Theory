@@ -1,0 +1,11 @@
+A Spinner in Android is a UI widget that allows the user to select an item from a dropdown list.
+
+AdapterView.OnItemSelectedListener is an interface in Android that provides callback methods to
+handle item selection events in AdapterView-based UI components, such as Spinner, ListView, and GridView.
+When a user selects an item from the view, this listener notifies your application so that you can perform 
+actions based on that selection.
+
+The OnItemSelectedListener interface has two primary methods:
+
+onItemSelected(AdapterView<?> parent, View view, int position, long id):
+onNothingSelected(AdapterView<?> parent)
