@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
 
     Spinner sp;
     TextView res;
-    //Button next;
     String[] courses = {"DBMS", "ASE", "CN", "OS"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,22 +27,12 @@ public class MainActivity extends AppCompatActivity {
 
         Spinner sp=findViewById(R.id.spinner);
         res=(TextView)findViewById(R.id.result);
-        //next= (Button) findViewById(R.id.button);
 
         ArrayAdapter<String> arrayAdapter=new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item,courses);
-        //arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         sp.setAdapter(arrayAdapter);
 
-        /*next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String selectedCourse = sp.getSelectedItem().toString();
-
-                // Update the TextView with the selected item
-                res.setText("Selected Course: " + selectedCourse);
-            }
-        });*/
+    
 
         sp.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
