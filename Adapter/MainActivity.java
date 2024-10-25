@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         list=(ListView)findViewById(R.id.list);
 
-        ArrayAdapter<String> ad=new ArrayAdapter(this,android.R.layout.simple_list_item_1,country);
+        ArrayAdapter<String> ad=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,country);
         list.setAdapter(ad);
     }
 }
