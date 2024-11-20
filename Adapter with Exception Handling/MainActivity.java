@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         try {
             list = findViewById(R.id.list);
+            //list=null  //For Exception handling
             ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(MainActivity.this, android.R.layout.simple_list_item_1, country);
             list.setAdapter(arrayAdapter);
         } catch (Exception e) {
